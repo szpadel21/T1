@@ -1,24 +1,22 @@
 body { 
     margin: 0;
-    background-color: rgb(252, 243, 232);
     height: 4000px;
+    background: url('../images/BlackBackground.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    
 }
-.main-page { 
-    margin: 0px 0px 0px 0px ;
-    background-color: rgb(252, 243, 232);   
-}
+
 .shop-sidebar{ 
     position: fixed;
     display: flex;
-    top: 184px;
-    left: 0px;
+    top: 104px;
+    left: 100px;
+    height: 80px;
     bottom: 0px;
-    max-width: 200px;
+    max-width: 100%;
     border-width: 2px;
-    border-color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255, 0.6);
-    z-index: 3;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 15;
 }
 
 .filter-search { 
@@ -27,16 +25,15 @@ body {
     border-radius: 4px;
     padding: 16px 4px 16px  4px;
     background-color: rgb(250, 235, 168);
-    color: white;
+    color: white;;
 }
 .products-sheet {
-    position: fixed;
+    position: relative;
     display: flex;
-    background-color: rgb(41, 40, 40);
+
     z-index: 2;
     height: 100%;
     width: 100%;
-    background: url('../images/BlackBackground.jpg') center/cover no-repeat ;
 
 }
 .toggle-sidebar { 
@@ -48,6 +45,8 @@ body {
     border: none;
     transform: 5s;
     border-radius: 50px;
+    width: 50px;
+    height: 50px;
     
 }
 .toggle-sidebar:hover { 
@@ -60,8 +59,8 @@ body {
 }
 .filter-icon    {
     margin-top: 4px; 
-    height: 40px;
-    width: 42px;
+    height: 36px;
+    width: 38px;
 }
 
 .filter-list.open, .hide.open  {
@@ -70,28 +69,113 @@ body {
 }
 
 .product-grid { 
-    position: relative;
-    left: 100px;
+    position: absolute;
+    
+    left: 180px;
     top: 184px;
+    right: 100px;
+    width: 80%;
     background-color: rgba(93, 95, 95, 0.486);
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 40px;
-    column-gap: 40px;
+    gap: 20px;
+    column-gap: 20px;
     padding: 20px;
     border-radius: 40px;
+    z-index: 2;
+    
 }
 .product-container { 
     margin: 40px;
-    background-color: rgb(153, 152, 153);
-    width: 400px;
-    max-height: 450px;
+    background-color: rgb(214, 213, 213);
+    max-width: 365px;
+    max-height: 600px;
     border-radius: 40px;
+    padding: 0;
 }
 .product-image-container { 
-    background-color: black;
-    margin: 30px 30px 30px 30px;
+
+    margin: 30px 30px 10px 30px;
+    border-radius: 30px;   max-height: 300px ;
+    max-width: 300px;
+    box-shadow: 2px 2px 16px black;
+}
+.product-image { 
+    max-width: 300px;
+    max-height: 300px;
+    z-index: 6;
     border-radius: 30px;
-    height: 300px ;
+}
+.product-name-container { 
+    margin-left: 40px;
+    font-family: Overlock SC;
+    max-width: 280px;
+    font-size: 26px;
+    font-weight: 500;
+    background-color: (214, 213, 213);
+    text-shadow: 0px 1px 1px black;
+}
+.product-price-container  {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-family: Cormorant SC;
+    max-width: 280px;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.karat-count-container { 
+    display: inline-block;
+    margin-left: 105px;
+    margin-top: 10px;
+    margin-right: 0px;
+    font-family: Cormorant SC;
+    max-width: 280px;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;text-shadow: 0px 1px 1px black;
+}
+
+.add-to-cart-button-container { 
+    max-width: 280px;
+    margin-left: 40px;
+    display: inline-block
+}
+.add-to-cart-button { 
+    margin-top: 16px;
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 40px;
+    padding: 8px 18px 8px 18px;
+    font-size: 24px;
+    font-family: Cormorant SC;
+    font-weight: 600;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 2px black;
+
+}
+.add-to-cart-button:hover { 
+    cursor: pointer;
+}
+ .product-cart-quantity-background { 
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(145deg, #FFD700, #DAA520);
+    border-radius: 50px;
+    margin-left: 40px;
+    box-shadow: 0px 1px 2px black;
+    opacity: 0;
+ }
+ .product-cart-quantity { 
+    font-family: Cormorant SC;
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 6px 0px 0px 14px;
+    opacity: 1;
+   
+
 }
