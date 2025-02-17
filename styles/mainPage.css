@@ -8,7 +8,7 @@ body {
 }
 @media (max-width: 1400px) {
     .page-big-logo-background-image { 
-        background-image: url('/images/torba4.png');
+        background-image: url('./images/torba4.png');
         background-position: center;
         width: device-width;
         height: 100%;
@@ -18,7 +18,7 @@ body {
 
 }
 .page-big-logo-background-image { 
-    background-image: url('/images/torba4.PNG');
+    background-image: url('./images/torba4.png');
     background-size: cover;
     background-position: center;
     width: 100%;
