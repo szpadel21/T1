@@ -1,7 +1,7 @@
 
 export function getProduct (productId) {
   let matchingProduct;
-    products.forEach(Product => {
+    products.forEach(product => {
       if (product1.id === productId) {
         matchingProduct = product
        };
@@ -56,11 +56,13 @@ class Jewlery extends Product {
     image: '../images/productimages/white-purse.png',
     name: "GG Marmont small shoulder bag",
     priceCents: 220000,
+    karats: ''
   },{
     id: "kj1234hn-bl15io9-a098sdyrh-f9as8d7f-4klj12bh34",
     image: '../images/productimages/torebka-louis-vuitton-saumur-bb.jpg',
     name: "Louis Vuitton Samur bag",
     priceCents: 299000,
+    karats: ''
    
   },{
     id: "a098sdyrh-f9as8d7f-klj23h41-f9as8d7f-4klj12bh34",
@@ -68,4 +70,6 @@ class Jewlery extends Product {
     name: "Mohan Jewellery Diamond Necklace",
     priceCents: 80000,
     karats: '18kt',
-  }]
+  },
+
+]

@@ -36,7 +36,7 @@ export function renderNavbar () {
         window.location.href="Shop.html"
     } )
     document.querySelector('.js-contact-btn').addEventListener('click', () => {
-        window.location.href="contact.html"
+        window.location.href= window.location.href="contact.html"
     } )
 
 

@@ -10,24 +10,53 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Fugaz+One&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
 
        
-        <link rel="stylesheet" href="styles/navbarShop.css"></style>   
+        <link rel="stylesheet" href="styles/navbarStyle.css"></style>   
         <link rel="stylesheet" href="styles/shop.css"></style>       
     </head>
     <body>
         <div class="main-page">
-            <div class="js-navbar-target-shop"></div>                
+            <div class="js-navbar-target"></div>                
             <button class="toggle-sidebar js-toggle-sidebar"><img class="filter-icon" src="./images/filterico.png"></button>
-            <div class="shop-sidebar" >
+            <div class="shop-sidebar">
                 
                 <div class="filter-list js-filter-list">
                     <input class="filter-search hide js-hide" type="text" name="filter-search" placeholder="Search filters">
                 </div>
             </div>
-            <div class="products-sheet">
-                <div class="product-grid js-products-grid ">
-                    
-                </div>
+
+            <div class="shop-searchbar-container"> 
+                    <input class="product-search js-product-search" type="text" name="product-search" placeholder="Search products">
+                    <button class="search-button js-search-button">
+                        <img class="search-icon-edit" src="../images/search-icon3.png">
+                      </button>
             </div>
+
+            <div class="cart-button-container">
+                <button class="cart-button"><img class="cart-image" src="./images/cart.png"></button>
+
+            </div>
+            <div class="cart-item-list">
+                <div class="item-quantity-total"> 1 items</div>
+                <div class="cart-item-list-grid">
+                    <div class="item-checkout-preview-container">
+                        <div class="item-preview-photo-container">
+                            <img class="item-preview-photo" src="./images/productImages/naszyjnik1.jpg">
+                        </div>
+                        <div class="item-name-checkout-preview">placeholder name WWWWWWWWWWWWWWWWWWWWW</div>
+                        <button class="preview-remove-item-button"></button>
+                    </div>
+                </div>
+
+
+
+
+                <button class="checkout-button"> checkout</button>
+                <button class="remove-all-button">remove all</button>
+            </div>
+
+
+            <div class="product-grid js-products-grid"></div>
+            
         <script type="module" src="./data/products.js"></script>
         <script type="module" src="./scripts/shop.js"></script>
     </body>
