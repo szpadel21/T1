@@ -6,17 +6,7 @@ body {
     margin: 0px 0px 0px 0px ;
     background-color: rgb(252, 243, 232);   
 }
-@media (max-width: 1400px) {
-    .page-big-logo-background-image { 
-        background-image: url('../images/torba4.png');
-        background-position: center;
-        width: device-width;
-        height: 100%;
-        padding: 0px;
-        z-index: 3;
-    }
 
-}
 .page-big-logo-background-image { 
     background-image: url('../images/torba4.png');
     background-size: cover;
@@ -25,6 +15,7 @@ body {
     height: 100vh;
     padding: 0px;
     z-index: 3;
+    overflow-x: hidden;
 }
 
 .main-text-container { 
@@ -73,7 +64,6 @@ body {
 
 .shop-now-button-container{ 
     display: flex;
-    
     margin-left: 10px;
     margin-right: auto;
     margin-top: 4%;
@@ -109,5 +99,33 @@ body {
     background: linear-gradient(145deg, #FFC700, #CFA030);
     transform: scale(1.05);
     cursor: pointer;
+    
+}
+/*
+@media (max-width: 1400px) {
+    .page-big-logo-background-image { 
+        background-image: url('../images/torba4.png') center/cover no-repeat;
+        
+        height: 100%;
+        padding: 0px;
+        z-index: 3;
+    }
+
 }
 
+@media (max-width: 800px) {
+    .shop-now-button { 
+        background: linear-gradient(145deg, #FFD700, #DAA520);
+        color: rgb(0, 0, 0);
+        font-family: Overlock SC;
+        font-size: 28px;
+        font-weight: 600;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.3);
+        transition: 0.3s;
+    }
+
+}
+    */

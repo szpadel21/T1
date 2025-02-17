@@ -29,7 +29,7 @@ document.querySelector('.js-toggle-sidebar').addEventListener('click', () => {
                         <div class="product-price-container">$${formatCurrency(product.priceCents)}</div>
                         <div class="karat-count-container">${product.karats}</div>
                         <div class="add-to-cart-button-container">
-                            <button class="add-to-cart-button js-add-to-cart-button" data-product-id='${product.id}'>book item</button>
+                            <button class="add-to-cart-button js-add-to-cart-button" data-product-id='${product.id}'>add to cart</button>
                             
                         </div>            
                         <div class="product-cart-quantity-background">
@@ -100,6 +100,20 @@ document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
         const productId = button.dataset.productId
         addToCart(productId)
         updateCartQuantity()
+
+        let cartPreviewItemHTML;
+
+        cartPreviewItemHTML = `
+         <div class="item-checkout-preview-container">
+                        <div class="item-preview-photo-container">
+                            <img class="item-preview-photo" src="${product.image}">
+                        </div>
+                        <div class="item-name-checkout-preview">${product.name}</div>
+                        <button class="preview-remove-item-button">Remove Item</button>
+                    </div>
+        `
+
+        document.querySelector('.cart-item-list-grid').innerHTML = cartPreviewItemHTML
     })
 })
 
@@ -109,5 +123,10 @@ document.querySelector('.checkout-button')
         window.location.href='checkout.html'
     }
 )
+/*
+document.querySelector('remmove-all-button').addEventListener('click',
+    ( ) => { 
 
-alert('WORK IN PROGRESS --- 80%')
+    }
+)
+*/

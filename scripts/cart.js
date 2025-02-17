@@ -33,7 +33,7 @@ export function saveToStorage ( ) {
 export function addToCart ( ) {
     let matchingItem    
 
-    cart.forEach((crtItem) => { 
+    cart.forEach((cartItem) => { 
         if (productId === cartItem.productId)
         {matchingItem = cartItem}
 

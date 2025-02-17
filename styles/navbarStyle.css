@@ -1,36 +1,5 @@
 /* NavBar decoration file*/
 
-@media (max-width: 1400px) {
-    .top-navbar { 
-        position: fixed;
-        z-index: 3;
-        display: flex;
-        max-width: 1fr;    
-        background-color: rgba(0, 0, 0, 0.5);  
-        height: 100px;
-            /*box-shadow: 0px 1px 4px white; */
-        border-width: 2px;
-        border-color: rgb(255, 255, 255, 0.5);
-        border-style:double;
-    }
-    .start-button-container, .shop-button-container, .contact-button-container { 
-        margin-left: 40px;
-        padding: 0px 0% 0px 10px;
-        }
-    .top-navbar-logo-image-container {
-        position: fixed;
-        top: 0px;
-        left: 0px;   
-        margin-right: 40px;  
-    }
-    .top-buttons-container { 
-        display: inline-block;
-        
-    }
-    
-}
-
-
 
 .top-navbar { 
     position: fixed;
@@ -76,4 +45,133 @@ margin-right: auto;
 padding: 0px 20px 0px 20px;
 }
 
+
+@media (max-width: 1400px) {
+    .top-navbar { 
+        position: fixed;
+        z-index: 3;
+        display: flex;
+        max-width: 1fr;    
+        background-color: rgba(0, 0, 0, 0.5);  
+        height: 100px;
+        border-width: 2px;
+        border-color: rgb(255, 255, 255, 0.5);
+        border-style:double;
+    }
+    .start-button-container, .shop-button-container, .contact-button-container { 
+        margin-left: 20%;
+        margin-right: auto;
+        padding: 0px 20px 0px 20px;     
+        }
+    .top-navbar-logo-image-container {
+        display: flex;
+        margin-right: auto
+    }
+    .top-buttons-container { 
+        display: flex;
+       justify-content: center;
+         margin:auto auto auto 10%
+        
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .top-navbar { 
+        position: fixed;
+        z-index: 3;
+        display: flex;
+        max-width: 1fr;    
+        background-color: rgba(0, 0, 0, 0.5);  
+        height: 100px;
+        border-width: 2px;
+        border-color: rgb(255, 255, 255, 0.5);
+        border-style:double;
+    }
+    .start-button-container, .shop-button-container, .contact-button-container { 
+        margin-left: 20%;
+        margin-right: auto;
+        padding: 0px 20px 0px 20px;     
+        }
+    .top-navbar-logo-image-container {
+        display: flex;
+        margin-right: auto
+    }
+    .top-buttons-container { 
+        display: flex;
+       justify-content: center;
+         margin:auto 20% auto 2%
+        
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .top-navbar { 
+        position: fixed;
+        z-index: 3;
+        display: flex;
+        max-width: 1fr;    
+        background-color: rgba(0, 0, 0, 0.5);  
+        height: 100px;
+        border-width: 2px;
+        border-color: rgb(255, 255, 255, 0.5);
+        border-style:double;
+    }
+    .start-button-container, .shop-button-container, .contact-button-container { 
+        margin-left: 20%;
+        margin-right: auto;
+        padding: 0px 20px 0px 20px;     
+        }
+    .top-navbar-logo-image-container {
+        display: flex;
+        margin-right: auto
+    }
+    .top-buttons-container { 
+        display: flex;
+         justify-content: center;
+         margin:auto 15% auto 4%
+        
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .top-navbar { 
+
+        z-index: 3;
+        display: flex;
+        max-width: 1fr;    
+        background-color: rgba(0, 0, 0, 0.5);  
+        height: 400px;
+        border-width: 2px;
+        border-color: rgb(255, 255, 255, 0.5);
+        border-style:double;
+    }
+    .start-button-container, .shop-button-container, .contact-button-container { 
+        margin-left: 20%;
+        margin-right: auto;
+        padding: 0px 20px 0px 20px;     
+        }
+    .top-navbar-logo-image-container {
+        display: flex;
+        margin-right: auto
+    }
+    .top-buttons-container { 
+        display: flex;
+         justify-content: center;
+         margin:auto 15% auto 4%
+        
+    }
+    .start-button-top, .shop-button-top,  .contact-button-top{
+        font-family: Space Grotesk;
+        font-weight: bolder;
+        font-size: 60px;
+        background-color: transparent;
+        border-width: 0px;
+        color: white;
+        text-decoration: none;
+       
+    }
+}
 
