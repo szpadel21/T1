@@ -115,7 +115,7 @@ padding: 0px 20px 0px 20px;
         background-color: rgba(0, 0, 0, 0.5);  
         height: 100px;
         border-width: 2px;
-        border-color: rgb(255, 255, 255, 0.5);
+        border-color: rgb(255, 255, 255, 0);
         border-style:double;
     }
     .start-button-container, .shop-button-container, .contact-button-container { 
@@ -135,7 +135,7 @@ padding: 0px 20px 0px 20px;
     }
     
 }
-
+/*
 @media (max-width: 400px) {
     .top-navbar { 
 
@@ -175,3 +175,4 @@ padding: 0px 20px 0px 20px;
     }
 }
 
+*/
