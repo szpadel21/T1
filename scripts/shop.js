@@ -109,3 +109,5 @@ document.querySelector('.checkout-button')
         window.location.href='checkout.html'
     }
 )
+
+alert('WORK IN PROGRESS --- 80%')
